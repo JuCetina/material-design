@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="index.js"></script>
+    <title>Material Design Textfields and Button</title>
+</head>
+
+<body>
+    <h1>Material Design Textfields and Button</h1>
+
+    <h2>Button</h2>
+    <button class="mdc-button foo-button">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Button</span>
+    </button>
+
+    <h2>Textfields (Filled and Outlined) with Leading Icon (Clickeable icon)</h2>
+    <label class="mdc-text-field mdc-text-field--filled mdc-text-field--with-leading-icon">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="my-label-id">Your Name</span>
+        <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading" tabindex="0"
+        role="button">event</i>
+        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+        <span class="mdc-line-ripple"></span>
+    </label>
+    
+    <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+        <span class="mdc-notched-outline">
+            <span class="mdc-notched-outline__leading"></span>
+            <span class="mdc-notched-outline__notch">
+                <span class="mdc-floating-label" id="my-label-id">Your Name</span>
+            </span>
+            <span class="mdc-notched-outline__trailing"></span>
+        </span>
+        <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading" tabindex="0"
+        role="button">event</i>
+        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+    </label>
+    
+    <h2>Textfields (Filled and Outlined) with Trailing Icon (Clickeable icon)</h2>
+    <label class="mdc-text-field mdc-text-field--filled mdc-text-field--with-trailing-icon">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="my-label-id">Your Name</span>
+        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+        <i class="material-icons mdc-text-field__icon mdc-text-field__icon--trailing" tabindex="0"
+            role="button">event</i>
+        <span class="mdc-line-ripple"></span>
+    </label>
+
+    <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon">
+        <span class="mdc-notched-outline">
+            <span class="mdc-notched-outline__leading"></span>
+            <span class="mdc-notched-outline__notch">
+                <span class="mdc-floating-label" id="my-label-id">Your Name</span>
+            </span>
+            <span class="mdc-notched-outline__trailing"></span>
+        </span>
+        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+        <i class="material-icons mdc-text-field__icon mdc-text-field__icon--trailing" tabindex="0"
+            role="button">event</i>
+    </label>
+
+    <h2>Textfields (Filled and Outlined) with Leading and Trailing Icon (Clickeable trailing icon)</h2>
+    <label
+        class="mdc-text-field mdc-text-field--filled mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="my-label-id">Phone Number</span>
+        <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading">phone</i>
+        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+        <i class="material-icons mdc-text-field__icon mdc-text-field__icon--trailing" tabindex="0"
+            role="button">event</i>
+        <div class="mdc-line-ripple"></div>
+    </label>
+
+    <label
+        class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon">
+        <span class="mdc-notched-outline">
+            <span class="mdc-notched-outline__leading"></span>
+            <span class="mdc-notched-outline__notch">
+                <span class="mdc-floating-label" id="my-label-id">Phone Number</span>
+            </span>
+            <span class="mdc-notched-outline__trailing"></span>
+        </span>
+        <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading">phone</i>
+        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+        <i class="material-icons mdc-text-field__icon mdc-text-field__icon--trailing" tabindex="0"
+            role="button">clear</i>
+    </label>
+
+    <h2>Textfields (Filled and Outlined) with Leading Icon (No clickeable icon)</h2>
+    <label class="mdc-text-field mdc-text-field--filled mdc-text-field--with-leading-icon">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="my-label-id">Your Name</span>
+        <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading">event</i>
+        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+        <span class="mdc-line-ripple"></span>
+    </label>
+
+    <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+        <span class="mdc-notched-outline">
+            <span class="mdc-notched-outline__leading"></span>
+            <span class="mdc-notched-outline__notch">
+                <span class="mdc-floating-label" id="my-label-id">Your Name</span>
+            </span>
+            <span class="mdc-notched-outline__trailing"></span>
+        </span>
+        <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading">event</i>
+        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+    </label>
+</body>
+
+</html>
